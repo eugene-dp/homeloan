@@ -200,11 +200,11 @@ function showResponse(req){
 
 </script>
 </head>
-<body style="background:#000538; margin:0;  padding:0px; overflow:hidden;">
+<body class="bgbodySingle">
 <!--         banner            -->
 
        <div class="enquireBg" >
-      <h3 style="font-size:16px; font-weight:bold; padding-top:0px">Quick Contact</h3>
+      <h3>Quick Contact</h3>
 	  
       <form action="salesforceCRM.php" method="post" name="contactform" id="contactform" onSubmit="return false;" >	
           <input name="PersonLeadSource" type="hidden" value="Smith and Ken Home Loans Website" />  
@@ -246,17 +246,17 @@ function showResponse(req){
 		    <td>:</td>
 		    <td>
 	        
-			<select name="phonetype" id="phonetype"  title="" class="select2" style="width:85px;">
+			<select name="phonetype" id="phonetype"  title="" class="select2" class="widthDropDown">
 			<option  value="Mobile">Mobile</option>
 			<option  value="Work Phone">Work Phone</option>
 			<option  value="Fax">Fax</option>
 			<option  value="Home Phone">Home Phone</option>
 			</select>
 			
-	        <input name="phone1" id="phone1" size="25" maxlength="3" class="txtFldnorml" type="text" style="width:30px;">
- 	        <input name="Phone" id="Phone" size="25" maxlength="10" class="txtFldnorml" type="text" style="width:90px;">
+	        <input name="phone1" id="phone1" size="25" maxlength="3" class="txtFldnorml widthTxt" type="text">
+ 	        <input name="Phone" id="Phone" size="25" maxlength="10" class="txtFldnorml widthTxt" type="text">
 			
-			  <div id="perror" style="color:#FF0000;display:none; font-size:11px;">Enter phone number</div>
+			  <div id="perror" class="phnNo">Enter phone number</div>
 			
             </td>
 		    </tr>
@@ -290,7 +290,7 @@ function showResponse(req){
 		  
 		  </td>
 		  </tr>
-		  <tr id="now" style="display:none;">
+		  <tr id="now" class="displayNone">
           <td>&nbsp;</td><td>&nbsp;</td>
 		  <td>
 		  
@@ -299,7 +299,7 @@ function showResponse(req){
 		  </tr>
         </table>
 		 </div>
-		   <div id="after" style="display:none; height:270px;">Your message has been sent successfully </div>
+		   <div id="after" class="msgSucc">Your message has been sent successfully </div>
 	      </form>
       <div class="googlemap"><a href="javascript:;"></a></div>
     </div>

@@ -587,4 +587,25 @@ DIV.smalltxtchk-butcntct {
 .update{ width:114px; height:35px; background:url(../images/calculate.gif) no-repeat; cursor:hand; border:0px;} 
 
 .bank{float:left; width:125px; height:70px; margin-right:7px;}
-
+.rightMargin{margin-right:0px!important;}
+.bannerMain{background:#FFF url(../images/banner_home_bg.jpg) no-repeat; height:314px;}
+.discountBanner{margin:8px 0px; margin-bottom:0px;}
+.discountBanner a{text-decoration:none;}
+.topMargin{margin-top:12px;}
+.topMarginContact{margin-top:5px;}
+.logosMain{float:left;height:75px; width:100%;padding:10px; border-top:5px #ccc solid;}
+.smithKen{border-bottom:#d0d0d0 solid 1px;}
+.bgbodySingle{background:#000538; margin:0;  padding:0px; overflow:hidden;}
+.bgbodySingle h3{font-size:16px; font-weight:bold; padding-top:0px;}
+.widthDropDown{width:85px;}
+.widthTxt{width:30px;}
+.phnNo{color:#FF0000;display:none; font-size:11px;}
+.displayNone{display:none;}
+.msgSucc{display:none; height:270px;}
+.colVal{margin-right:19px;}
+.inputWidth{width:250px}
+.select2width{width:90px;}
+.inputWidth1{width:35px}
+.inputWidth2{width:105px}
+.phnNumberSpan{color:#FF0000;display:none; margin-left:189px;}
+.smalltxtchk{padding:2px 0 0 190px;}

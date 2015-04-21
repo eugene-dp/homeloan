@@ -5,8 +5,8 @@
 	ob_start();
 	session_start();
 	$sql_home="select pagecontents,page_banner from omort_pagecontents where page_id=1";
-$rs_home=Query($sql_home);
-$contents=mysql_fetch_array($rs_home);
+	$rs_home=Query($sql_home);
+	$contents=mysql_fetch_array($rs_home);
 	?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,11 +21,8 @@ $contents=mysql_fetch_array($rs_home);
 <link rel="stylesheet" href="colorbox.css" />
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jquery.colorbox.js"></script>
-<script language="javascript"  type="text/javascript">
-    $(document).ready(function(){
-        $(".ajax").colorbox();
-    });
-</script>
+<script type="text/javascript" src="js/common.js"></script>
+
 </head>
 
 <body>
@@ -48,7 +45,7 @@ include("includes/navigation.php");
 
 <!--Begin Banner -->
 <div id="BannerHomeOuter">
-  <div class="Banner" style="background:#FFF url(images/banner_home_bg.jpg) no-repeat; height:314px;">
+  <div class="Banner bannerMain">
     <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="930" height="314" id="FlashID" title="Banner">
       <param name="movie" value="uploads/banners/<?php echo $contents[1];?>" />
       <param name="quality" value="high" />
@@ -86,16 +83,20 @@ include("includes/navigation.php");
 include("includes/left_links_home.php");
 ?>
   </div>
-  <div style="margin:8px 0px; margin-bottom:0px; "> <a href="http://www.smithandken.com/octobarsales/" style="text-decoration:none;"> <img src="userfiles/love-discount-banner.jpg" width="654"   alt="love-discount-banner"> </a> </div>
+  <div class="discountBanner"> 
+  	<a  href="http://www.smithandken.com/octobarsales/"> 
+    <img src="userfiles/love-discount-banner.jpg" width="654"   alt="love-discount-banner"> 
+    </a> 
+  </div>
   <div id="ContentAreaHome">
     <?php
 
 echo stripslashes($contents[0]);
 ?>
   </div>
-  <div id="RightCont"> <a href="content/mortgagecalculatorpop.php" class="ajax"><img src="images/morgate_calculator.gif" alt="" /></a> <a href="content/quickcontactpop.php"  class="ajax"> <img src="images/quick_contact.gif" alt="" style="margin-top:12px;" /></a> </div>
+  <div id="RightCont"> <a href="content/mortgagecalculatorpop.php" class="ajax"><img src="images/morgate_calculator.gif" alt="" /></a> <a href="content/quickcontactpop.php"  class="ajax"> <img src="images/quick_contact.gif" alt="" class="topMargin"/></a> </div>
   <div class="clear"></div>
-  <div class="bank-logos" style="float:left;height:75px; width:100%;padding:10px; border-top:5px #ccc solid;">
+  <div class="bank-logos logosMain">
     <div class="bank"> <img src="images/icons/ADCB.jpg" height="" width="" /> </div>
     <div class="bank"> <img src="images/icons/Ajman-Bank.jpg" /> </div>
     <div class="bank"> <img src="images/icons/CBD.jpg" /> </div>

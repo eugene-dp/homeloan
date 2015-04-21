@@ -18,9 +18,9 @@
 	define('DB_PASSWORD','test');
 */
 	define('DB_HOST','localhost');				# Mysql Database host name
-	define('DB_NAME','smithhom_loan');				    # Mysql Database Name
-	define('DB_USER','smithhom_loan');						# Mysql Database User Name
-	define('DB_PASSWORD','loan@1234');
+	define('DB_NAME','amandeep_smithandloan');				    # Mysql Database Name
+	define('DB_USER','amandeep_smithan');						# Mysql Database User Name
+	define('DB_PASSWORD','amandeepm@13');
 
 
 

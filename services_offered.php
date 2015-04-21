@@ -23,11 +23,7 @@
 <link rel="stylesheet" href="colorbox.css" />
 <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jquery.colorbox.js"></script>
-<script language="javascript"  type="text/javascript">
-    $(document).ready(function(){
-        $(".ajax").colorbox();
-    });
-</script>
+<script type="text/javascript" src="js/common.js"></script>
 </head>
 
 <body>

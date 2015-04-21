@@ -27,7 +27,7 @@
 </div>
 
 
-<div class="FooterLinks" style="margin-right:0px;">
+<div class="FooterLinks rightMargin">
 <ul>
 	<li><a href="meettheteam.php">Meet the Team</a></li>
     <li><a href="becomeintro.php">Become an Introducer Agent</a></li>
@@ -47,7 +47,7 @@
 <div>Tel: +971 4 4394300 | Fax: +971 4 4394399 | Dubai Economic Trade License No. 675787. <div>
 
 <script type="text/javascript">
-  <?php /*var _gaq = _gaq || [];
+  var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-18531436-21']);
   _gaq.push(['_trackPageview']);
   
@@ -56,15 +56,7 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  */?>  
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61367197-1', 'auto');
-  ga('send', 'pageview');
-
+  
 </script>
  </div>
  
