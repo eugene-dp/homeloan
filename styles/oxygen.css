@@ -1,0 +1,590 @@
+@charset "utf-8";
+/* CSS Document */
+/* -------------------------------------------------- COMMON -------------------------------------------------------*/
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#333333;
+	font-size:13px;
+	margin:0px;
+	padding:0px;
+	line-height:20px;
+}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ul, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{margin:0px;	padding:0px; list-style:none; border:none;}
+
+H1, H2, H3, H4, H5, H6{
+	display:block; font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+	font-size:24px;	font-weight:normal;	padding:0 0 10px 0;	color:#010b68;	
+}
+H2{
+	font-size:15px; font-weight:bold; color:#1d1160; padding:0 0px 10px 0px;
+}
+H3{
+	font-size:13px; font-weight:bold; color:#333333; margin:0 0 8px 0;
+}
+H4, H5, H6{
+	font-size:15px;
+	padding:12px 0 6px 0px;
+}
+INPUT, SELECT, TEXTAREA{
+	font-family:Verdana, Arial, Helvetica, sans-serif; font-size:11px; margin:0; padding:0;
+}
+p:first-child{
+	margin:0px;
+}
+
+P{
+	margin:0 0 14px !important; line-height:20px; padding:0 0 0 1px;
+}
+A{
+	color:#333333; text-decoration:none;
+}
+A:hover{
+	color:#333333; text-decoration:none;
+}
+A:focus{
+	outline:none;
+}
+/*----------- Universal Items -------------*/
+SPAN.mandatory{
+	font-size:12px; color:#ff0000; font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+/* ---------COMMON HACKS -----------*/
+.clearfix:after {
+    content: "."; display:block; height:0px; clear:both; visibility:hidden;
+}
+/* Hides from IE-mac \*/
+ *:first-child+html .clearfix {height:1%;}
+ * html .clearfix {height:1%;}
+/* End hide from IE-mac */
+
+.clear{
+	clear:both;
+}
+.hide{
+	display:none;
+}
+.disclaimer { display:none }
+
+/*---------------------Begin Main Header------------*/
+DIV#HeaderOuter{
+	width:100%;
+	height:138px;
+	background:url(../images/header_bg.gif) repeat-x;
+}
+DIV#HeaderOuter .HeaderAlign{
+	width:930px;
+	height:auto;
+	margin:0px auto;
+}
+DIV#LogoCont{
+	float:left;
+	width:177px;
+	height:138px;
+}
+DIV#LogoCont h1{
+	margin:0px;
+	padding:0px;
+}
+.logo a{
+	height:92px;
+	background:url(../images/skhomeloanslogo.png) no-repeat;
+	display:block;
+	margin:26px 0 0 0;
+}
+.HeaderAlign .header_top{
+	float:right;
+	width:277px;
+	height:22px;
+	background:url(../images/top_link_bg.gif) no-repeat;
+	padding:10px 0px 0 15px;
+	font-size:12px;
+	line-height:14px;
+}
+.header_top a{
+	color:#FFF;
+	display:block;
+	float:left;
+	margin:0 13px 0 0;
+	padding:0 0 0 18px;
+	height:14px;
+}
+.header_top a.about{
+	background:url(../images/about_icon.gif) no-repeat left top;
+}
+.header_top a.contact{
+	background:url(../images/contact_icon.gif) no-repeat left top;
+}
+.header_top a:hover, .header_top a.TopActive{
+	color:#63c6fd;
+	background-position:bottom left;
+}
+DIV.Navigation{
+	width:658px;
+	height:34px;
+	float:right;
+	margin:38px 0 0 0;
+}
+DIV.Navigation ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+DIV.Navigation ul li{
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	color:#505050;
+	margin:0 10px 0 0;
+}
+DIV.Navigation ul li a{
+	color:#505050;
+	height:34px;
+	display:block;
+	padding:0 0 0 0;
+	float:left;
+}
+DIV.Navigation ul li a.home{
+	width:65px;
+	background:url(../images/home.gif) no-repeat;
+}
+DIV.Navigation ul li a.residential{
+	width:174px;
+	background:url(../images/residential.gif) no-repeat;
+}
+DIV.Navigation ul li a.step{
+	width:155px;
+	background:url(../images/step_by_step.gif) no-repeat;
+}
+DIV.Navigation ul li a.checklist{
+	width:87px;
+	background:url(../images/checklist.gif) no-repeat;
+}
+DIV.Navigation ul li a.services{
+	width:135px;
+	background:url(../images/services.gif) no-repeat;
+}
+DIV.Navigation ul li a span{
+	display:none;
+}
+DIV.Navigation ul li a:hover, DIV.Navigation ul li a.active{
+	background-position:bottom;
+}
+DIV#BannerHomeOuter{
+	width:100%;
+	height:314px;
+	background:url(../images/banner_bg_home.gif) repeat-x;
+}
+.Banner{
+	width:930px;
+	height:auto;
+	margin:0px auto;
+}
+DIV#BannerInsideOuter{
+	width:100%;
+	height:212px;
+	background:url(../images/banner_bg_inside.gif) repeat-x;
+}
+/*---------------------Begin Middle Area-----------*/
+DIV#MiddleArea{
+	width:930px;
+	height:auto;
+	margin:0px auto;
+	padding:14px 0 0 0;
+}
+DIV#LeftCont{
+	float:left;
+	width:257px;
+	height:auto;
+	margin:0 17px 0 0;
+}
+UL.LeftLink{
+	margin:0px;
+	padding:15px 0 17px 0;
+	width:247px;
+}
+UL.LeftLink li{
+	margin:0px;
+	padding:0px;
+	width:247px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:13px;
+	border-top:#d0d0d0 solid 1px;
+	margin-bottom:1px;
+}
+UL.LeftLink li a{
+	display:block;
+	color:#515151;
+	height:27px;	
+	padding:4px 0 0 27px;
+	background:url(../images/arrow_grey.gif) no-repeat left center;
+	margin:0 0 0 11px;
+}
+UL.LeftLink li a:hover, UL.LeftLink li a.LinkActive{
+	color:#010b68;
+	background:url(../images/arrow_blue.gif) no-repeat left center;
+}
+DIV#MiddleArea #ContentAreaHome{
+	float:left;
+	width:388px;
+	height:auto;
+	margin:0 0 0 0px;
+	padding:11px 0 0 0;
+}
+DIV#MiddleArea #ContentAreaHome h2{
+	color: #1d1160; font-size:20px;
+}
+DIV#MiddleArea #ContentAreaInside{
+	float:left;
+	width:653px;
+	height:auto;
+	margin:0 0 0 0px;
+	padding:11px 0 0 0;
+}
+DIV#MiddleArea #ContentAreaInside img{
+	margin-right:7px;
+}
+DIV#MiddleArea #ContentAreaInside ul{
+	margin:0px;
+	padding:0px 0 0 10px;
+}
+DIV#MiddleArea #ContentAreaInside ul li{
+	background:url(../images/bullet_1.gif) no-repeat 0 4px;
+	padding:0px 0 2px 19px;
+	margin:0 0 10px 0px;
+}
+DIV#MiddleArea #RightCont{
+	float:right;
+	width:257px;
+	height:auto;
+}
+UL.Listing1{
+	margin:0px;
+	padding:0px 0 0 7px;
+}
+UL.Listing1 li{
+	background:url(../images/bullet_1.gif) no-repeat 0 4px;
+	padding:0 0 0 17px;
+	margin:0 0 21px 0;
+}
+OL.Listing2{
+	margin:0px;
+	padding:0px 0 0 0px;
+	margin:0 0 0 31px;
+}
+OL.Listing2 li{
+	padding:0 0 0 0px;
+	margin:0 0 21px 0;
+}
+UL.Listing3{
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+}
+UL.Listing3 li{
+	margin:12px 0 0 0;
+	padding:12px 0 0 0;
+	/*border-top:#dbdbdb solid 1px;*/
+}
+UL.Listing3 li h2{
+	font-size:15px;
+	font-weight:bold;
+	color:#1d1160;
+	margin:0 0 0 0;
+	padding:0 0 5px 0;
+}
+OL.Listing4{
+	margin:0px;
+	padding:0px 0 0 0px;
+	margin:0 0 13px 31px;
+}
+OL.Listing4 li{
+	padding:0 0 0 0px;
+	margin:0 0 9px 0;
+}
+UL.Listing5{
+	margin:0px;
+	padding:0px 0 15px 0px;
+}
+UL.Listing5 li{
+	background:url(../images/bullet_1.gif) no-repeat 0 4px;
+	padding:2px 0 2px 17px;
+	margin:0 0 0px 10px;
+}
+UL.Listing5 h2{
+	font-size:15px;
+	font-weight:bold;
+	color:#1d1160;
+	margin:0 0 0 0;
+	padding:0 0 5px 0;
+}
+.address{
+	float:right;
+	width:190px;
+	height:auto;
+	padding:5px 0 0 5px;
+}
+.TeamList{
+	padding:0 0 10px 0;
+	margin:0 0 15px 0;
+	/*background:url(../images/dot.gif) repeat-x bottom;*/
+}
+.TeamList h3{
+	padding:0 0 1px 0;
+	margin:0 0 0 0;
+	color:#1d1160;
+	font-size:14px;
+	font-weight:bold;
+}
+.TeamList span{
+	display:block;
+	padding:0 0 3px 0;
+	font-size:12px;
+	font-style:italic;
+}
+.TeamList .photo{
+	float:left;
+	/*background:#eeeeee;*/
+	padding:0px;
+	margin:0 15px 0 0;
+}
+/*---------------->>Morrgage Calculator<<--------------*/
+.Mortgage{
+	padding:5px 0 5px 0;
+}
+.Mortgage .Coll{
+	float:left;
+	width:411px;
+	height:auto;
+	margin-right:70px;
+}
+.Coll .Box{
+	padding:10px 10px 10px 10px;
+	border:#dedbd8 solid 1px;
+	height:auto;
+	background:url(../images/bg_light_grey.gif) repeat-x top #FFF;
+	margin:0 0 10px 0;
+}
+.Coll .Box td{
+	padding:4px 0 4px 0;
+}
+.Coll .Box h2{
+	font-size:15px;
+	font-weight:bold;
+	color:#1d1160;
+	padding:0 0px 5px 0px;
+}
+.MortField01{
+	padding:5px 0 0 15px;
+	margin:0 0 0 0;
+	border:#c1c1c1 solid 1px;
+	width:171px;
+	height:20px;
+	color:#333333;
+	font-size:11px;
+}
+span.FixGrey{
+	display:block;
+	padding:3px 0 3px 17px;
+	background:#ebe9e9;
+	font-size:11px;
+	width:170px;
+}
+span.FixBlue{
+	display:block;
+	padding:3px 0 3px 17px;
+	background:#5cb9fd;
+	font-weight:bold;
+	color:#FFF;
+}
+.MortgageResult{
+	padding:0 0 0 0;
+}
+.MortgageResult .Main{
+	padding:0 0 0 0;
+	border:#dddad7 solid 1px;
+}
+.MortgageResult .Main .Tab{
+	padding:0px 0 0 10px;
+	height:39px;
+	background:url(../images/tab_bg_blue.gif) repeat-x;
+	font-weight:bold;
+	color:#FFF;
+	line-height:15px;
+	text-align:center;
+	font-size:12px;
+}
+.MortgageResult .Main .Tab span{
+	float:left;
+	padding:0 0 0 0;
+	color:#FFF;
+}
+.MortgageResult .Main .Tab img{
+	float:left;
+	padding:0 0 0 3px;
+}
+.MortgageResult .Main .Tab td{
+	padding:0 0px 0 0px;
+}
+.MortgageResult .Main .Area{
+	padding:0 0 0 0;
+	font-size:12px;
+}
+.MortgageResult .Main .Area td{
+	padding:5px 0 5px 10px;
+	text-align:left;
+}
+
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+width: 150px;
+border: 1px solid #b9b9b9;
+padding: 2px;
+background:#fbfbfb url(../images/bg_grey_light.gif) repeat-x top;
+visibility: hidden;
+z-index: 100;
+padding:9px;
+-moz-border-radius: 10px;  
+-khtml-border-radius: 10px;  
+-webkit-border-radius: 10px;  
+}
+
+#dhtmlpointer{
+position:absolute;
+left: -300px;
+z-index: 101;
+visibility: hidden;
+}
+
+/*--------Moving 2----------*/
+.tabspace{
+	padding:1px 0 1px 0px;
+}
+H4.movetab{	
+	/*background:url(../images/tab_bg.gif) repeat-x;*/
+	margin:0px 0 1px 0;
+	padding:0px 0 0 0px;
+	font-size:12px;	
+}
+H4.movetab a{
+	margin:0px;
+	padding:4px 0 0 0;
+	display:block;
+	width:640px;
+	height:20px;
+	color:#5d5d5d;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	cursor:text;
+}
+/*---------------------Begin Footer-----------*/
+DIV#FooterOuter{
+	width:100%;
+	height:auto;
+	background:#000538;
+	padding:25px 0 25px 0;
+	margin:19px 0 0 0;
+}
+DIV#FooterOuter .FooterArea{
+	width:930px;
+	margin:0px auto;
+	height:auto;
+}
+.FooterLinks{
+	padding:0 0 0 0;
+	margin:0 73px 0 0;
+	float:left;
+	display:block;
+}
+.FooterLinks ul{
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+.FooterLinks ul li{
+	margin:0px;
+	padding:6px 0 6px 33px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	background:url(../images/arrow_white.gif) no-repeat left center;
+}
+.FooterLinks ul li a{
+	color:#FFF;
+}
+.FooterLinks ul li a:hover{
+	text-decoration:underline;
+	color:#FFF;
+}
+DIV.CopyRight{
+	padding:12px 0 0 0;
+	width:100%;
+	height:32px;
+	background:url(../images/bg_grey.gif) repeat-x;
+	text-align:center;
+	font-size:13px;
+	color:#525252;
+}
+
+/*-------------Forms-----------*/
+.contactrigh{
+	height:auto;
+	float:left;
+	padding:10px 0 25px 1px;
+	width:457px;
+}
+.select{
+	font-size:11px;  border:1px solid #c3c3c3; height:27px; width:262px; padding:4px 1px 4px 5px; color:#4a4a4a; 
+}
+.select2{
+	font-size:11px;  border:1px solid #c3c3c3; height:27px; width:262px; padding:4px 3px 1px 5px; color:#4a4a4a;
+}
+.label {
+	width:165px; padding:0px; margin-right:0px; display:block; float:left;
+	}
+.textfield {
+	font-size:11px; background: #ffffff;  border:1px solid #c3c3c3; height:20px;  padding:5px 0 0 10px; color:#333333;  
+	}
+.col {
+	 margin:0 35px 0 0; text-align:right; width:5px; float:left; display:inline;
+	}
+DIV.smalltxtCntct {
+	padding:0px 0 13px; margin:0px; width:457px;
+	}
+.textfield01{
+	font-size:11px; background: #ffffff; border:1px solid #c3c3c3; width:283px; padding:8px 0 0 10px; height:88px;  color:#333333;  
+	}
+DIV.smalltxtchk-butcntct {
+	padding:0px 0 0px 200px; border:0px;
+	}
+
+.apply {
+	background:url(../images/send_btn.gif) no-repeat;
+	width:104px;
+	float:left;
+	height:35px;
+	padding:0px;
+	border:0;
+	cursor:pointer;
+	color:#FFF;
+	font-weight:bold;
+	}
+.reset {
+	background:#5b4a90;
+	width:77px;
+	float:left;
+	height:25px;
+	margin-left:5px;
+	padding:0px;
+	border:0;
+	cursor:pointer;
+	color:#FFF;
+	font-weight:bold;
+	}
+
+.update{ width:114px; height:35px; background:url(../images/calculate.gif) no-repeat; cursor:hand; border:0px;} 
+
+.bank{float:left; width:125px; height:70px; margin-right:7px;}
+

@@ -1,0 +1,2 @@
+[08-Mar-2015 08:52:52 America/Denver] PHP Fatal error:  SoapClient::__setSoapHeaders(): Invalid SOAP header in /home/smithhom/public_html/soapclient/SforceBaseClient.php on line 317
+[02-Apr-2015 07:57:55 America/Denver] PHP Fatal error:  SoapClient::__setSoapHeaders(): Invalid SOAP header in /home/smithhom/public_html/soapclient/SforceBaseClient.php on line 317

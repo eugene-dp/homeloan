@@ -1,0 +1,404 @@
+/*****************************************     Home and Commom     *********************************************/
+body {
+	background-color: #828488; font-family:Tahoma, Arial, Verdana; font-size:11px; color:#505050; text-align:left; 
+	line-height:16px; margin:0px; padding:0px;
+}
+A:link, A:visited, A:active{
+	color:#656565; text-decoration:none;
+}
+A:hover{
+	color:#3f681a; text-decoration:underline;;
+}
+A.logout{
+	text-align:right; float:right; display:block; width:40px; position:relative; height:15px; top:50px; right:15px;
+}
+A.logout:link, A.logout:visited, A.logout:active{
+	color:#21409a; text-decoration:none;
+}
+A.logout:hover{
+	color:#21409a; text-decoration:underline;
+}
+INPUT{
+	margin:0px; padding:0px; font-family:Tahoma, Arial, Verdana; font-size:11px; color:#656565;
+}
+FORM{
+	margin:0px;
+}
+IMG{
+	border-width:0px;
+}
+UL{
+	padding:0px; margin:0px;
+}
+DIV#Container{
+	background-color: #fff; width:913px; height:auto; padding:5px; margin:0px auto;
+}
+DIV#Container:after{    /*Clear Float at the end*/
+	content:"."; display:block; clear:both; visibility:hidden; height:0px;
+}
+/* Hides from IE-mac \*/
+* html #Container {height: 1px;}
+/* End hide from IE-mac */
+
+DIV#logoBanner{
+	background:url(../images/header_bg.gif)  repeat-x left top; color:#21409a; height:82px; margin-bottom:5px; text-align:left; padding:3px 0px 0px 15px;
+}
+DIV#logo{
+	 margin-left:30px; padding-top:6px; width:399px;
+}
+DIV#LinksNContents{
+	width:913px; height:auto;
+}
+DIV#loginBoxtopMargin{
+	text-align:center; padding-top:135px; margin:0px; height:380px;
+}
+DIV#loginBox{
+	background:#eaeaea url(../images/loginboxbg.gif) repeat-y 0px 0px; text-align:left; width:477px; height:187px; padding:0px;
+	margin:0px;
+}
+DIV#logintopbg{
+	background:url(../images/loginboxtop.gif) left top no-repeat; width:477px; height:9px;
+}
+DIV#loginbotbg{
+	background:url(../images/loginboxbot.gif) left top no-repeat; width:477px; height:13px;
+}
+DIV#loginPic{
+	background:url(../images/login_pic.gif) 6px 0px no-repeat; width:287px; height:155px; padding:10px 25px 0px 165px;
+}
+DIV#loginForm{
+	width:265px; text-align:right;
+}
+DIV.loginFields{ /* IE only*/
+	background:#aeaeae; color:#FFFFFF; font-weight:bold; text-align:left; height:19px; width:197px; margin-bottom:6px;
+	padding-left:5px; float:left;
+}
+html>body .loginFields{ /* IE7 & Others*/
+	width:195px; height:20px;
+}
+.loginFields INPUT{ /* IE only*/
+	font-family:Tahoma, Arial, Verdana; font-size:11px; color:#656565; font-weight:normal; width:129px; height:17px; margin:0px;
+	padding:1px 2px; border-width:0px;
+}
+html>body .loginFields INPUT{ /* IE7 & Others*/
+	border: solid 1px #aeaeae; height:16px;
+}
+.loginFields LABEL{
+	width:60px; margin-right:0px; padding-top:1px; display:block; float:left;
+}
+IMG.loginbut{
+	float:right;
+}
+DIV#forgotpass{
+	margin-top:5px; display:block; clear:both; text-align:left;
+}
+SPAN.notice{
+	color:#ff0909;
+}
+SPAN.blueNbold{
+	color:#6076ba; font-weight:bold;
+}
+.blueNbold A:link, .blueNbold A:visited, .blueNbold A:active{
+	color:#0b6eac; text-decoration:none;
+}
+.blueNbold A:hover{
+	color:#333333; text-decoration:underline;
+}
+DIV#loginError{
+	width:280px; height:34px; color:#ff0909; line-height:14px;
+}
+DIV#loginError IMG{
+	vertical-align:top; margin-right:3px;
+}
+DIV#CurvedBox{
+	background:#eaeaea url(../images/loginboxbg.gif) repeat-y 0px 0px; text-align:left; width:477px; height:auto; 
+	padding:0px; margin:0px;
+}
+DIV#Curvedtopbg{
+	background:url(../images/loginboxtop.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:477px; 
+	height:9px;
+}
+DIV#Curvedbotbg{
+	background:url(../images/loginboxbot.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:477px; 
+	height:13px; 
+}
+
+/*************** Forgot Password ***************/
+DIV#PasswordtopMargin{
+	text-align:center; padding-top:105px; margin:0px; height:410px;
+}
+DIV.PasswordContent{
+	 text-align:left; width:377px;
+}
+H2.Passwordheading{
+	font-size:17px; font-weight:normal; margin:0px; margin-bottom:10px; word-spacing: 0.3em; display:block;
+}
+DIV#CurvedBox_pass{
+	background:#eaeaea url(../images/passwordboxbg.gif) repeat-y 0px 0px; text-align:left; width:287px; height:auto; 
+	padding:0px; margin:0px;
+}
+DIV#Curvedtopbg_pass{
+	background:url(../images/passwordboxtop.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:287px; 
+	height:9px;
+}
+DIV#Curvedbotbg_pass{
+	background:url(../images/passwordboxbot.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:287px; 
+	height:13px; 
+}
+DIV#PasswordForm{
+	text-align:left; height:auto; padding:10px 20px 5px;
+}
+DIV.PasswordFields{
+	background:#aeaeae; color:#FFFFFF; font-weight:bold; text-align:left; height:19px; width:237px; margin-bottom:6px;
+	padding-left:5px;
+}
+html>body .PasswordFields{ /* IE only*/
+	width:235px; height:20px;
+}
+.PasswordFields INPUT{
+	font-family:Tahoma, Arial, Verdana; font-size:11px; color:#656565; font-weight:normal; width:159px; height:17px; margin:0px;
+	padding:1px 2px; border-width:0px;
+}
+html>body .PasswordFields INPUT{ /* IE only*/
+	border: solid 1px #aeaeae; height:16px;
+}
+.PasswordFields LABEL{
+	width:70px; margin-right:0px; padding-top:1px; display:block; float:left;
+}
+
+/*****************************************     Inside Pages     *********************************************/
+
+
+/***** Welcome Page *****/
+DIV.welcome{
+	font-size:17px; margin-top:100px;
+}
+DIV#welcomeText{
+	text-align:center; height:auto; padding:45px;
+}
+
+/***** Manage Page *****/
+H2.pageheading{
+	font-size:17px; font-weight:normal; margin:0px; margin-bottom:20px; word-spacing: 0.3em; display:block; color:#010b68;
+}
+
+/* Left Side*/
+DIV#leftlinksMain{ 
+	height:auto; width:173px; padding:0px; float:left;
+}
+DIV#leftlinkstop{
+	background:url(../images/linkstabletop.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:183px; 
+	height:6px; margin:0px; display:block; clear:both;
+}
+DIV#leftlinksmidblock{ 
+	background:#fff; height:auto; width:171px; padding:0px 5px; border:solid #d4d4d4; border-width:0px 1px; display:block; 
+	clear:both;
+}
+DIV#leftlinksgraybg{
+	background:#eaeaea; min-height:526px; height:auto; width:171px;
+}
+*html DIV#leftlinksgraybg{ /* IE only*/
+	height:506px;
+}
+DIV#leftlinksbot{
+	background:url(../images/linkstablebot.gif) left top no-repeat; font-family:Tahoma, Arial; font-size:3px; width:183px; 
+	height:6px; margin:0px; display:block; clear:both;
+}
+DIV#links A{
+	 background-color:#d5d5d5; padding:2px 8px; border-bottom:solid 1px #fff; text-decoration:none; width:auto; display:block;
+}
+DIV#links A:hover{
+	background:#C9C9C9; color:#4169e1; text-decoration:none;
+}
+DIV#links A.activelink{
+	background:#C9C9C9; color:#4169e1; text-decoration:none;
+}
+DIV#sublinks A{
+	 background:#eaeaea url(../images/subarrow.gif) 8px 50% no-repeat; border-bottom:solid 1px #fff;  text-decoration:none; 
+	 display:block; padding:2px 8px 2px 18px;
+}
+DIV#sublinks A:hover{
+	background:#e0e0e0 url(../images/subarrow.gif) 8px 50% no-repeat; color:#4284da; text-decoration:none;
+}
+DIV#sublinks A.activesublink{
+	background:#e0e0e0 url(../images/subarrow.gif) 8px 50% no-repeat; color:#4284da; text-decoration:none;
+}
+
+/* Right Side*/
+DIV#rightMain{
+	background:none; height:auto; width:703px; padding:5px 0px; position:relative; right:12px; float:right;
+}
+DIV#searchBlockMain{
+	margin:20px 0px 6px; height:22px;
+}
+
+DIV#searchBlockMain1{
+	margin:0px 0px 6px 0px; height:22px; border-top:#999999 solid 1px; padding-bottom:5px; padding-top:7px;
+}
+
+DIV#searchBlockMain2{
+	margin:0px 0px 0px 0px; height:22px; border-top:#dadada solid 1px; padding-bottom:5px; padding-top:7px;
+}
+
+DIV#searchBlockMain1 IMG{
+	vertical-align:top;
+}
+
+DIV#searchBlockMain IMG{
+	vertical-align:top;
+}
+DIV#searchBlock{
+	width:198px; float:left; padding-right:8px;
+}
+DIV#searchBlock INPUT{
+	width:125px; height:16px; padding:0px 2px; margin-right:1px;
+}
+DIV#searchBlock1{
+	width:350px; float:left; padding-right:8px; 
+}
+DIV#searchBlock1 INPUT{
+	width:125px; height:16px; padding:0px 2px; margin-right:1px; margin-right:10px;
+}
+DIV#searchBlock1 .textbox2{ width:110px;
+	font-family:Tahoma, Arial, Verdana; font-size:11px; color:#505050;
+}
+
+
+
+DIV#sortBox{
+	width:60px; padding-left:10px; float:left;
+}
+DIV#pagenumber{
+	text-align:right; width:320px; float:right;  font-weight:bold;
+}
+DIV#pagenumber SPAN{
+	top:2px;
+}
+DIV#goSection{
+	width:85px; float:right; margin-left:7px;
+}
+DIV#goSection INPUT{
+	width:25px; height:16px; padding:0px 2px; margin:0px 1px; vertical-align:top; font-weight:normal;
+}
+DIV#goSection SELECT{
+	width:40px; height:16px; padding:0px 2px; margin:0px 1px; vertical-align:top; font-weight:normal;
+}
+DIV#currentpage IMG{
+	margin-left:5px; vertical-align:text-top;
+}
+DIV#buttonBlock{
+	background-color:#eaeaea; height:24px; padding:4px 8px;
+}
+DIV#buttonBlock h3{ font-size:12px; margin:0px; padding:4px 0px 0px 0px; display:block;}
+
+DIV#BottombuttonBlock{
+	background-color:#fff; height:24px; padding-top:10px;
+}
+DIV#BottombuttonBlock IMG{
+margin-right:5px;
+}
+DIV#buttonBlock INPUT{
+	background-color:#efefef; color:#656565; font-family:Tahoma, Arial; font-weight:bold; font-size:11px; 
+	padding:2px 0px; margin-right:6px; width:auto; border:2px outset; cursor:hand;
+}
+DIV#buttonBlock A{ /* if not using input Buttons*/
+	background-color:#efefef; color:#656565; font-family:Tahoma, Arial; font-weight:bold; font-size:11px; text-decoration:none; 
+	padding:3px 5px; position:relative; top:4px; margin-right:6px; width:auto; border:2px outset; cursor:hand;
+}
+DIV#buttonBlock A:hover{
+	background-color:#efefef; color:#656565; font-family:Tahoma, Arial; font-weight:bold; font-size:11px; text-decoration:none; 
+	padding:4px 4px 2px 6px; position:relative; top:4px; margin-right:6px; width:auto; border:2px inset; cursor:hand;
+}
+TABLE#listing{
+	border:solid 1px #a8a8a8;
+}
+TABLE#listing TR{
+	background-color:#fff; height:16px;
+}
+TABLE#listing TR.alternative{
+	background-color:#eaeaea; height:16px;
+}
+TABLE#listing TR.ColumnHeadings{
+	background:#d9d9d9 url(../images/list_column_headingbg.gif) left top repeat-x; height:29px; border-bottom:solid 1px #a8a8a8;
+}
+TABLE#listing TR IMG{
+	vertical-align:middle;
+}
+
+TABLE#listing TD{
+	padding:2px 6px 2px 6px;
+}
+TABLE#listing TR.ColumnHeadings TH{
+	border-left:solid 1px #f3f3f3; border-right:solid 1px #c9c9c9; padding:0px 6px 0px 6px;
+}
+TABLE#listing TR.ColumnHeadings TH A{
+	color:#505050; text-decoration:none;
+}
+TABLE#listing TR.ColumnHeadings TH A:hover{
+	color:#505050; text-decoration:underline;
+}
+TABLE#listing TD A{
+	text-decoration:underline;
+}
+TABLE#listing TD A:hover{
+	text-decoration:none;color:#0099CC;
+}
+.textbox{
+	font-family:Tahoma, Arial, Verdana; font-size:11px; color:#505050; width:190px; height:16px; padding:0px 2px; margin-right:1px;
+	 vertical-align:middle;
+}
+.textbox2{
+	font-family:Tahoma, Arial, Verdana; font-size:11px; color:#505050;
+}
+UL#errors{ /*Listing of errors inside pages*/
+	margin:0px; padding:0px; line-height:18px; color:#ff0909; list-style:none; margin-bottom:5px; position:relative; top:-7px;
+}
+UL#errors LI{
+	background:url(../images/error_inside.gif) left 4px no-repeat; margin-left:0px; padding-left:13px;
+}
+html>body UL#errors LI{
+	background-position:left 3px;
+}
+SPAN.mandatory{
+	font-size:13px;color:#ff0000; font-weight:normal;}
+	/* searchBlock-buttons */
+DIV#searchBlock-buttons{
+	width:338px; float:left; padding-right:8px; 
+}
+
+DIV#searchBlock-buttons INPUT.s{
+	width:125px;  height:16px; padding:0px 2px; margin-right:1px;
+}
+	
+.search{ width:60px; height:22px; background: url(../images/searchbut.gif) no-repeat; cursor:hand; border:0px;}
+.exp_excelbut{ width:121px; height:22px; background: url(../images/exp_excelbut.gif) no-repeat; cursor:hand; border:0px;}
+
+.update{ width:60px; height:22px; background:url(../images/updatebut.gif) no-repeat; cursor:hand; border:0px;}
+
+.reset{ width:60px; height:22px; background: url(../images/resetbut.gif) no-repeat; cursor:hand; border:0px;}
+.delete{ width:60px; height:22px; background: url(../images/deletebut2.gif) no-repeat; cursor:pointer; border:0px; line-height:0px; padding:3px 0 11px 0; margin-top:5px;}
+
+.send{ width:55px; height:22px; background: url(../images/sendbut.gif) no-repeat; cursor:hand; border:0px;}
+.viewdetails{ width:60px; height:22px; background:url(../images/updatebut.gif) no-repeat; cursor:hand; border:0px;}
+.calender{ background:url(../images/calender.gif) no-repeat; width:20px; height:19px; border:0px;}
+
+
+.loginbutton{
+	float:right;
+	width:57px;
+	height:50px;
+	background:url(../images/loginbut.jpg) no-repeat left top;
+	border:0;
+}
+.send_btn{
+	width:55px;
+	height:22px;
+	background:url(../images/sendbut.gif) no-repeat left top;
+	border:0;
+}
+.reset_bttn{
+	width:60px;
+	height:22px;
+	background:url(../images/resetbut.gif) no-repeat left top;
+	border:0;
+	margin-top:3px;
+}

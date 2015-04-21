@@ -1,0 +1,275 @@
+/* Floatbox v3.12 */
+/* September 17, 2008 */
+
+#fbOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-width: 0;
+	margin: 0;
+	padding: 0;	
+}
+/* overlay color */
+div.fbOverlay_black { background-color: #000; }
+div.fbOverlay_white {background-color: #000; }
+div.fbOverlay_blue { background-color: #000; }
+div.fbOverlay_yellow { background-color: #000; }
+div.fbOverlay_red { background-color: #000; }
+div.fbOverlay_custom { background-color: #000; }
+
+#fbBox {
+	position: absolute;
+	border-style: solid;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+}
+div.fbBox_black {
+	border-color: #f3e113;  /* outerBorder color */
+	background-color: #f3e113;  /* main floatbox color */
+}
+div.fbBox_white {
+	border-color: #f3e113;  /* outerBorder color */
+	background-color: #000538;  /* main floatbox color */
+	border-width:10px;
+}
+div.fbBox_blue {
+	border-color: #1d1d1d;  /* outerBorder color */
+	background-color: #6c9a33;  /* main floatbox color */
+}
+div.fbBox_yellow {
+	border-color: #98733a;
+	background-color: #ed9;
+}
+div.fbBox_red {
+	border-color: #98733a;
+	background-color: #6c9a33;
+}
+div.fbBox_custom {
+	border-color: #98733a;
+	background-color: #6c9a33;
+}
+
+#fbBox div, #fbBox a {
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	outline: none;
+}
+#fbBox a { background: url(graphics/blank.gif); }
+
+#fbZoomDiv, a.fbPopup img {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	/* border-width is set in js code */
+	border-style: solid;
+	border-color: #dbdbdb;
+	margin: 0;
+	padding: 0;
+}
+
+#fbZoomImg {
+	position: relative;
+	border-width: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#fbLoader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* animated 'loading' graphic */
+#fbBox .fbLoader_black { background-image: url(graphics/loading_black_small.gif); }
+#fbBox .fbLoader_white { background-image: url(graphics/loading_white.gif); }
+#fbBox .fbLoader_blue { background-image: url(graphics/loading_black_small.gif); }
+#fbBox .fbLoader_yellow { background-image: url(graphics/loading_white.gif); }
+#fbBox .fbLoader_red { background-image: url(graphics/loading_black_small.gif); }
+#fbBox .fbLoader_custom { background-image: url(graphics/loading_black_small.gif); }
+
+#fbShadowRight, #fbShadowBottom, #fbShadowCorner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+#fbShadowRight {
+	background-image: url(graphics/shadowRight.png);
+	background-position: top right;
+}	
+#fbShadowBottom {
+	background-image: url(graphics/shadowBottom.png);
+	background-position: bottom left;
+}	
+#fbShadowCorner {
+	background-image: url(graphics/shadowCorner.png);
+	background-position: bottom right;
+}	
+
+#fbContentPanel {
+	position: relative;  /* won't fade in ie6 if absolute */
+	height: 100%;
+	width: 100%;
+}
+
+#fbDiv {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	border-style: solid;
+	overflow: hidden;
+}
+/* innerBorder color */
+#fbBox .fbDiv_black { border-color: #616060; }
+#fbBox .fbDiv_white { border-color: #000; }
+#fbBox .fbDiv_blue { border-color: #5d5d5d; }
+#fbBox .fbDiv_yellow { border-color: #700; }
+#fbBox .fbDiv_red { border-color: #b64; }
+#fbBox .fbDiv_custom { border-color: #b64; }
+
+#fbResizer {
+	position: absolute;
+	width: 25px;  /* = dimensions of the resize button (see note below) */
+	height: 25px;
+}
+/* resize button graphic */
+#fbBox .fbResizer_black { background-image: url(graphics/resize_black.gif); }
+#fbBox .fbResizer_white { background-image: url(graphics/resize_white.gif); }
+#fbBox .fbResizer_blue { background-image: url(graphics/resize_blue.gif); }
+#fbBox .fbResizer_yellow { background-image: url(graphics/resize_yellow.gif); }
+#fbBox .fbResizer_red { background-image: url(graphics/resize_red.gif); }
+#fbBox .fbResizer_custom { background-image: url(graphics/resize_red.gif); }
+/* note: if you want the smaller resize button, change #fbResizer width and height to 19px
+   and also add "_small" to the resize gif name (e.g., graphics/resize_black_small.gif) */
+
+#fbLeftNav, #fbRightNav { position: absolute; }
+#fbLeftNav { left: 0; }
+#fbRightNav { right: 0; }
+
+#fbUpperPrev, #fbUpperNext {
+	position: absolute;
+	width: 49px;  /* = dimensions of the upper prev and next graphics */
+	height: 23px;
+	background-repeat: no-repeat;
+}
+
+
+#fbInfoPanel {
+	position: absolute;
+	overflow: hidden;
+	text-align: left;
+	line-height: 1.25em;
+	/* caption and info link text */
+  	font-family: Verdana, Helvetica, sans-serif;
+	font-size:11px;
+	
+	
+}
+
+#fbCaption {
+	display: block;
+}
+/* caption and info link color */
+#fbBox .fbCaption_black, #fbBox .fbInfoPanel_black a:link, #fbBox .fbInfoPanel_black a:visited { color: #fffffd; font-weight:bold; }
+#fbBox .fbCaption_white, #fbBox .fbInfoPanel_white a:link, #fbBox .fbInfoPanel_white a:visited { color: #000; }
+#fbBox .fbCaption_blue, #fbBox .fbInfoPanel_blue a:link, #fbBox .fbInfoPanel_blue a:visited { color: #ccb490; }
+#fbBox .fbCaption_yellow, #fbBox .fbInfoPanel_yellow a:link, #fbBox .fbInfoPanel_yellow a:visited { color: #700; }
+#fbBox .fbCaption_red, #fbBox .fbInfoPanel_red a:link, #fbBox .fbInfoPanel_red a:visited { color: #ec9; }
+#fbBox .fbCaption_custom, #fbBox .fbInfoPanel_custom a:link, #fbBox .fbInfoPanel_custom a:visited { color: #735; }
+
+#fbInfoLink {
+	display: block;
+	float: left;
+	padding-right: 16px;  /* space between info link and item number */
+}
+
+#fbItemNumber {
+	display: block;
+	float: left;
+	font-size: 10px;  /* 'image x of y' text */
+}
+/* 'image x of y' color */
+#fbBox .fbItemNumber_black { color: #000538; }
+#fbBox .fbItemNumber_white { color: #000538; }
+#fbBox .fbItemNumber_blue { color: #000538; }
+#fbBox .fbItemNumber_yellow { color: #000538; }
+#fbBox .fbItemNumber_red { color: #000538; }
+#fbBox .fbItemNumber_custom { color: #000538; }
+
+#fbControlPanel {
+	position: absolute;
+	height: 14px;
+	font-size: 1px;
+}
+
+#fbLowerNav {
+	float: left;
+	width: 70px;  /* sum of lowerprev and lowernext widths */
+	height: 14px;  /* height of 1 sprite panel in lowerprev and lowernext graphics */
+}
+
+#fbLowerPrev {
+	float: left;
+	width: 29px;  /* = dimensions of the lower nav 'prev' graphic */
+	height: 14px;
+	background:left center no-repeat;
+}
+
+
+#fbLowerNext {
+	float: right;
+	width: 29px;  /* = dimensions of the lower nav 'next' graphic */
+	height: 14px;
+	background-repeat: right center no-repeat;
+	
+	}
+
+
+#fbControls { float: right; }
+
+#fbPlayPause { float: left; }
+#fbPlay, #fbPause { position: absolute; }
+#fbPlayPause, #fbPlay, #fbPause {
+	width: 46px;  /* = dimensions of the 'play' and 'pause' graphics (they need to be the same size) */
+	height: 14px;
+	background-repeat: no-repeat;
+}
+/* 'play' and 'pause' graphics */
+#fbBox .fbPlay_black { background-image: url(graphics/play_black.gif); }
+#fbBox .fbPlay_white { background-image: url(graphics/play_white.gif); }
+#fbBox .fbPlay_blue { background-image: url(graphics/play_blue.gif); }
+#fbBox .fbPlay_yellow { background-image: url(graphics/play_yellow.gif); }
+#fbBox .fbPlay_red { background-image: url(graphics/play_red.gif); }
+#fbBox .fbPlay_custom { background-image: url(graphics/play_yellow.gif); }
+#fbBox .fbPause_black { background-image: url(graphics/pause_black.gif); }
+#fbBox .fbPause_white { background-image: url(graphics/pause_white.gif); }
+#fbBox .fbPause_blue { background-image: url(graphics/pause_blue.gif); }
+#fbBox .fbPause_yellow { background-image: url(graphics/pause_yellow.gif); }
+#fbBox .fbPause_red { background-image: url(graphics/pause_red.gif); }
+#fbBox .fbPause_custom { background-image: url(graphics/pause_yellow.gif); }
+
+#fbClose {
+	float: right;
+	width: 46px;  /* = dimensions of the 'close' graphic */
+	height: 14px;
+	background-repeat: no-repeat;
+}
+/* 'close' graphic */
+#fbBox .fbClose_black { background-image: url(graphics/close_red_org.gif); }
+#fbBox .fbClose_white { background-image: url(graphics/close_white.gif); }
+#fbBox .fbClose_blue { background-image: url(graphics/close_red.gif); }
+#fbBox .fbClose_yellow { background-image: url(graphics/close_yellow.gif); }
+#fbBox .fbClose_red { background-image: url(graphics/close_red.gif); }
+#fbBox .fbClose_custom { background-image: url(graphics/close_yellow.gif); }
